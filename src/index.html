@@ -25,7 +25,66 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Tip calculator app</title>
+    <title>Tip Calculator | @migueldev__</title>
   </head>
-  <body></body>
+  <body>
+    <!-- container -->
+    <main>
+      <h1>Splitter</h1>
+
+      <!-- tip calculator -->
+      <section>
+        <!-- calculator menu -->
+        <div>
+          <!-- bill input -->
+          <label for="bill">Bill</label>
+          <div>
+            <input type="text" id="bill" name="bill" />
+            <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+          </div>
+          <!-- select tip -->
+          <span>Select tip %</span>
+          <div>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" placeholder="Custom" />
+          </div>
+          <!-- number of people -->
+          <label for="people">Number of People</label>
+          <div>
+            <input type="text" id="people" name="people" />
+            <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+          </div>
+        </div>
+        <!-- calculator display -->
+        <div>
+          <!-- tip amount person -->
+          <div>
+            <div>
+              <p>Tip Amount</p>
+              <span>/ person</span>
+            </div>
+            <span>$0.00</span>
+          </div>
+          <!-- total person -->
+          <div>
+            <div>
+              <p>Total</p>
+              <span>/ person</span>
+            </div>
+            <span>$0.00</span>
+          </div>
+        </div>
+      </section>
+      <!-- tip calculator -->
+    </main>
+    <!-- container -->
+
+    <!-- js -->
+    <script src="./js/main.js"></script>
+    <!-- js -->
+  </body>
 </html>

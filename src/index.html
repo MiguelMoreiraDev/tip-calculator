@@ -30,7 +30,7 @@
   <body class="font-mono">
     <!-- container -->
     <main
-      class="flex h-screen w-full flex-col items-center justify-center gap-20 bg-light-grayish-cyan px-4"
+      class="flex h-screen w-full flex-col items-center justify-center gap-20 bg-light-grayish-cyan px-4 max-lg:gap-10 max-sm:px-0"
     >
       <h1 class="font-semibold uppercase tracking-[0.4em] text-very-dark-cyan">
         Spli <br />
@@ -39,7 +39,7 @@
 
       <!-- tip calculator -->
       <section
-        class="grid max-w-4xl grid-cols-2 gap-11 rounded-3xl bg-white p-8"
+        class="grid max-w-4xl grid-cols-2 gap-11 rounded-3xl bg-white p-8 max-lg:grid-cols-1 max-lg:gap-9"
       >
         <!-- calculator menu -->
         <div>
@@ -49,7 +49,7 @@
             for="bill"
             >Bill</label
           >
-          <div class="relative flex items-center">
+          <div class="relative mb-8 flex items-center">
             <input
               type="number"
               id="bill"
@@ -118,7 +118,7 @@
         </div>
         <!-- calculator display -->
         <div
-          class="flex flex-col rounded-2xl bg-very-dark-cyan px-10 pb-10 pt-16 text-very-light-grayish-cyan"
+          class="flex flex-col rounded-2xl bg-very-dark-cyan px-10 pb-10 pt-16 text-very-light-grayish-cyan max-lg:pb-6 max-lg:pt-10"
         >
           <!-- tip amount person -->
           <div class="mb-14 flex items-center justify-between">
@@ -131,7 +131,7 @@
             <span class="block text-5xl font-bold text-strong-cyan">$0.00</span>
           </div>
           <!-- total person -->
-          <div class="mb-auto flex items-center justify-between">
+          <div class="mb-auto flex items-center justify-between max-lg:mb-9">
             <div class="flex flex-col gap-1">
               <p class="font-bold">Total</p>
               <span class="text-sm font-bold text-dark-grayish-cyan"

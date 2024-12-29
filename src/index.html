@@ -27,56 +27,125 @@
 
     <title>Tip Calculator | @migueldev__</title>
   </head>
-  <body>
+  <body class="font-mono">
     <!-- container -->
-    <main>
-      <h1>Splitter</h1>
+    <main
+      class="flex h-screen w-full flex-col items-center justify-center gap-20 bg-light-grayish-cyan px-4"
+    >
+      <h1 class="font-semibold uppercase tracking-[0.4em] text-very-dark-cyan">
+        Spli <br />
+        tter
+      </h1>
 
       <!-- tip calculator -->
-      <section>
+      <section
+        class="grid max-w-4xl grid-cols-2 gap-11 rounded-3xl bg-white p-8"
+      >
         <!-- calculator menu -->
         <div>
           <!-- bill input -->
-          <label for="bill">Bill</label>
-          <div>
-            <input type="text" id="bill" name="bill" />
-            <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+          <label
+            class="inline-block font-semibold text-very-dark-cyan"
+            for="bill"
+            >Bill</label
+          >
+          <div class="relative flex items-center">
+            <input
+              type="number"
+              id="bill"
+              name="bill"
+              placeholder="0"
+              class="border-transparent w-full rounded-lg border-2 bg-very-light-grayish-cyan p-4 text-right text-xl font-bold text-very-dark-cyan outline-none transition-all placeholder:text-dark-grayish-cyan hover:border-strong-cyan focus:border-strong-cyan"
+            />
+            <img
+              class="absolute left-4"
+              src="./images/icon-dollar.svg"
+              alt="Dollar icon"
+            />
           </div>
           <!-- select tip -->
-          <span>Select tip %</span>
-          <div>
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <input type="number" placeholder="Custom" />
+          <span class="mb-5 inline-block">Select tip %</span>
+          <div class="mb-12 grid grid-cols-3 gap-4">
+            <button
+              class="rounded-md bg-very-dark-cyan py-2 text-2xl text-very-light-grayish-cyan transition-all hover:bg-strong-cyan hover:text-very-dark-cyan"
+            >
+              5%
+            </button>
+            <button
+              class="rounded-md bg-very-dark-cyan py-2 text-2xl text-very-light-grayish-cyan transition-all hover:bg-strong-cyan hover:text-very-dark-cyan"
+            >
+              10%
+            </button>
+            <button
+              class="rounded-md bg-very-dark-cyan py-2 text-2xl text-very-light-grayish-cyan transition-all hover:bg-strong-cyan hover:text-very-dark-cyan"
+            >
+              15%
+            </button>
+            <button
+              class="rounded-md bg-very-dark-cyan py-2 text-2xl text-very-light-grayish-cyan transition-all hover:bg-strong-cyan hover:text-very-dark-cyan"
+            >
+              25%
+            </button>
+            <button
+              class="rounded-md bg-very-dark-cyan py-2 text-2xl text-very-light-grayish-cyan transition-all hover:bg-strong-cyan hover:text-very-dark-cyan"
+            >
+              50%
+            </button>
+            <input
+              class="border-transparent rounded-md border-2 bg-very-light-grayish-cyan px-2 text-right text-xl font-bold text-very-dark-cyan outline-none transition-all placeholder:text-center hover:border-strong-cyan focus:border-strong-cyan"
+              type="number"
+              placeholder="Custom"
+            />
           </div>
           <!-- number of people -->
-          <label for="people">Number of People</label>
-          <div>
-            <input type="text" id="people" name="people" />
-            <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+          <div class="mb-3 flex items-center justify-between">
+            <label for="people">Number of People</label>
+            <span class="text-red-400 hidden">Can't be zero</span>
+          </div>
+          <div class="relative flex items-center">
+            <input
+              class="border-transparent w-full rounded-lg border-2 bg-very-light-grayish-cyan p-4 text-right text-xl font-bold text-very-dark-cyan outline-none transition-all placeholder:text-dark-grayish-cyan hover:border-strong-cyan focus:border-strong-cyan"
+              type="text"
+              id="people"
+              name="people"
+            />
+            <img
+              class="absolute left-4"
+              src="./images/icon-dollar.svg"
+              alt="Dollar icon"
+            />
           </div>
         </div>
         <!-- calculator display -->
-        <div>
+        <div
+          class="flex flex-col rounded-2xl bg-very-dark-cyan px-10 pb-10 pt-16 text-very-light-grayish-cyan"
+        >
           <!-- tip amount person -->
-          <div>
-            <div>
-              <p>Tip Amount</p>
-              <span>/ person</span>
+          <div class="mb-14 flex items-center justify-between">
+            <div class="flex flex-col gap-1">
+              <p class="font-bold">Tip Amount</p>
+              <span class="text-sm font-bold text-dark-grayish-cyan"
+                >/ person</span
+              >
             </div>
-            <span>$0.00</span>
+            <span class="block text-5xl font-bold text-strong-cyan">$0.00</span>
           </div>
           <!-- total person -->
-          <div>
-            <div>
-              <p>Total</p>
-              <span>/ person</span>
+          <div class="mb-auto flex items-center justify-between">
+            <div class="flex flex-col gap-1">
+              <p class="font-bold">Total</p>
+              <span class="text-sm font-bold text-dark-grayish-cyan"
+                >/ person</span
+              >
             </div>
-            <span>$0.00</span>
+            <span class="block text-5xl font-bold text-strong-cyan">$0.00</span>
           </div>
+          <button
+            class="rounded-lg bg-strong-cyan py-4 text-xl font-bold uppercase text-very-dark-cyan disabled:cursor-not-allowed disabled:opacity-20"
+            disabled
+          >
+            Reset
+          </button>
         </div>
       </section>
       <!-- tip calculator -->
